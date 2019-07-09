@@ -1,5 +1,6 @@
 //Code teilweise aus FastLed Fire Example übernommen und für unsere Zwecke angepasst
 
+
 #include <FastLED.h>
 #include <IRremote.h>
 #include <IRremoteInt.h>
@@ -97,45 +98,96 @@ void Fire2012()
        //Serial.println("its5");
       //}
       
-       
-      
     if (m == 5) {
         NUM_LED=150;
         FastLED.clear ();
        Serial.println("its5");
       }
-      if (m == 10) {
-      NUM_LED=120;
+      if (m == 8) {
+      NUM_LED=140;
       FastLED.clear ();
       Serial.println("its10");
       }
-      if (m == 15) {
-      NUM_LED=100; 
+      if (m == 11) {
+      NUM_LED=130;
+      FastLED.clear ();
+      Serial.println("its10");
+      }
+      if (m == 14) {
+      NUM_LED=120; 
+      FastLED.clear ();
+      Serial.println("its15");
+      }
+      if (m == 17) {
+      NUM_LED=110; 
       FastLED.clear ();
       Serial.println("its15");
       }
       if (m == 20) {
-      NUM_LED=80; 
+      NUM_LED=100; 
       FastLED.clear ();
       Serial.println("its15");
       }
-      if (m == 25) {
-      NUM_LED=60; 
-      FastLED.clear ();
-      Serial.println("its15");
-      }
-      if (m == 30) {
-      NUM_LED=40;
+      if (m == 23) {
+      NUM_LED=90;
       Serial.println("its20");
       FastLED.clear ();
       }
+      if (m == 25) {
+      NUM_LED=80; 
+      FastLED.clear ();
+      Serial.println("its15");
+      
+      }
+      if (m == 27) {
+      NUM_LED=70; 
+      FastLED.clear ();
+      Serial.println("its15");
+      
+      }
+      if (m == 29) {
+      NUM_LED=70; 
+      FastLED.clear ();
+      Serial.println("its15");
+      
+      }
+      if (m == 31) {
+      NUM_LED=60; 
+      FastLED.clear ();
+      Serial.println("its15");
+      
+      }
       if (m == 33) {
-      NUM_LED=20; 
+      NUM_LED=50; 
+      FastLED.clear ();
+      Serial.println("its15");
+      
+      }
+      if (m == 34) {
+      NUM_LED=40; 
       FastLED.clear ();
       Serial.println("its15");
       
       }
       if (m == 35) {
+      NUM_LED=30; 
+      FastLED.clear ();
+      Serial.println("its15");
+      
+      }
+      if (m == 36) {
+      NUM_LED=20; 
+      FastLED.clear ();
+      Serial.println("its15");
+      
+      }
+      if (m == 37) {
+      NUM_LED=10; 
+      FastLED.clear ();
+      Serial.println("its15");
+      
+      }
+      if (m == 38) {
       NUM_LED=1; 
       FastLED.clear ();
       Serial.println("its15");
@@ -151,6 +203,10 @@ void Fire2012()
     //Serial.println(i);
     irrecv.resume();
   }
+  else {
+    m = m + 3;
+    
+    }
     
     
 
